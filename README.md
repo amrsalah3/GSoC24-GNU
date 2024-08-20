@@ -25,13 +25,13 @@ In this section, I will briefly about my journey throughout the project for peop
 
 The first objective in GSoC 2024 project is to make a communication mechanism for any app to navigate its users to the Anastasis app to back up his secret data of the caller app or recover his secret data. 
 
-What I did here is that I fetched the abandoned Anastasis app project and spent some time trying to rebase it and make it up-to-date with the master to be ready to implement the new features. Then, I implemented the mechanism and made a document describing the Android Intent specification that must be matched and the different results that could be returned to the caller app. Finally, I created a library to abstract all the mechanism functionalities.
+What I did here is that I fetched the abandoned Anastasis app project and spent some time trying to rebase it and make it up-to-date with the master to be ready to implement the new features. Then, I implemented the mechanism and made a document describing the Android Intent specification that must be matched and the different results that could be returned to the caller app. In addition, I created an example test app that uses the mechanism. Finally, I created a library to abstract all the mechanism functionalities.
 
 **The second part of the project: (Wallet integration with other apps)**
 
 The Wallet app has been allowing communication with it by the URIs. For example, a user can pay an online merchant by clicking on a taler URI (provided by the merchant) that opens the Wallet app to proceed with the payment. 
 
-What I did here is that I extended this functionality by allowing any merchant app to use Android Intents to send the user to the Wallet app and also return to the merchant (caller) app with a payment result status. Furthermore, I implemented the multi-payment feature which allows the merchant to send multiple "taler pay" URIs in the Intent and these multiple payments will be displayed in the Wallet app for the user and he can pay all of them in one click! Also, I created the communication specification data for the Wallet app but this time I extended the RFC document that already has much information about the interaction with the GNU Taler Wallet.
+What I did here is that I extended this functionality by allowing any merchant app to use Android Intents to send the user to the Wallet app and also return to the merchant (caller) app with a payment result status. Furthermore, I implemented the multi-payment feature which allows the merchant to send multiple "taler pay" URIs in the Intent and these multiple payments will be displayed in the Wallet app for the user and he can pay all of them in one click! In addition, I created an example test app that uses the mechanism. Finally, I created the communication specification data for the Wallet app but this time I extended the RFC document that already has much information about the interaction with the GNU Taler Wallet.
 
 **The third part of the project: (Anastasis integration with the Wallet)**
 
