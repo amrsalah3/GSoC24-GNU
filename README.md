@@ -45,6 +45,7 @@ What I did is that I implemented the paying functionality by linking the Anastas
 - Wallet Integration With the Other Apps - [Git Branch](https://git.taler.net/taler-android.git/tree/?h=dev/amr-salah/wallet-payment-integration)
 - Wallet Integration Specification - [RFC Document Git Branch](https://git.gnunet.org/lsd0006.git/tree/draft-grothoff-taler.xml?h=dev/amr-salah/gsoc2024-wallet-integration-specs)
 - Anastasis Integration With the Wallet - [Git Branch](https://git.taler.net/taler-android.git/tree/?h=dev/amrsalah3/anastasis-wallet-integration)
+- Integration demo apps - [Git Branch](https://github.com/amrsalah3/GSoC24-GNU/tree/main/taler-integration-demo-apps)
 
 ## Thoughts on GSoC
 
