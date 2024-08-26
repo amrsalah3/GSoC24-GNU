@@ -7,11 +7,11 @@ This repository contains the final report and work done regarding ***Google Summ
 - Project Link: [GNU Taler Git Repository](https://git.taler.net/taler-android.git) - [GSoC Website](https://summerofcode.withgoogle.com/programs/2024/projects/boSUJEVt)
 
 ## Overview
-<p align="justify">The GNU Taler Anastasis is a key backup/recovery system that allows the user to securely deposit shares of a core secret with an open set of escrow providers, to recover it if the secret is lost. The core secret itself is protected from the escrow providers by giving each provider only part of the information, and additionally by encrypting it with an identity-based key unknown to the providers. It prioritizes user privacy by implementing strong cryptographic protocols and privacy-enhancing features. Anastasis comes also with an Android app. 
+<p align="justify">The GNU Taler Anastasis is a key backup/recovery system that allows the user to securely deposit shares of a core secret with an open set of escrow providers, to recover it if the secret is lost. The core secret itself is protected from the escrow providers by giving each provider only part of the information, and additionally by encrypting it with an identity-based key unknown to the providers. It prioritizes user privacy by implementing strong cryptographic protocols and privacy-enhancing features. Anastasis also comes with an Android app. 
 
 The GNU Taler Wallet is another software developed within the GNU Taler project. It serves as a user interface for managing digital payments and transactions securely. The app enables users to store digital currency, make payments, and monitor transaction history. The Taler Wallet also comes with an Android app. 
 
-The main objective of the project is to provide a mechanism for any Android app to use the Anastasis app to allow the user back up/recover his secrets, or to use the Wallet app to allow the user to make some payments for the caller app. Eventually, let the Anastasis app use the Wallet app to make the user pay for the backup providers.</p>
+The main objective of the project is to provide a mechanism for any Android app to use the Anastasis app to allow the user to back up/recover his secrets or to use the Wallet app to allow the user to make some payments for the caller app. Eventually, let the Anastasis app use the Wallet app to make the user pay for the backup providers.</p>
 
 ## Objectives
 1. Design and implement a mechanism to allow any app to save and restore its secret keys via the Taler Anastasis app. **[Completed]**
@@ -19,11 +19,11 @@ The main objective of the project is to provide a mechanism for any Android app 
 3. Integrate the Anastasis app with the Wallet app to allow the users to pay the Anastasis backup providers for their service via the Wallet app. **[Completed]**
 
 ## Work Done
-In this section, I will briefly about my journey throughout the project for people who are interested in getting some background about the current state of the Taler Wallet and the Taler Anastasis projects.
+In this section, I will talk briefly about my journey throughout the project for people who are interested in getting some background about the current state of the Taler Wallet and the Taler Anastasis projects.
 
 **The first part of the project: (Anastasis integration with other apps)**
 
-The first objective in GSoC 2024 project is to make a communication mechanism for any app to navigate its users to the Anastasis app to back up his secret data of the caller app or recover his secret data. 
+The first objective in GSoC 2024 project is to make a communication mechanism for any app to navigate its users to the Anastasis app to back up their secret data of the caller app or recover their secret data. 
 
 What I did here is that I fetched the abandoned Anastasis app project and spent some time trying to rebase it and make it up-to-date with the master to be ready to implement the new features. Then, I implemented the mechanism and made a document describing the Android Intent specification that must be matched and the different results that could be returned to the caller app. In addition, I created an example test app that uses the mechanism. Finally, I created a library to abstract all the mechanism functionalities.
 
